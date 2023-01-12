@@ -22,11 +22,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {NgConfirmModule} from 'ng-confirm-box';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
