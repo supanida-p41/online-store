@@ -23,14 +23,16 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {NgConfirmModule} from 'ng-confirm-box';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component'; 
+import { SignupComponent } from './signup/signup.component';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    EmployeeDashboardComponent
   ],
   imports: [
     BrowserModule,
