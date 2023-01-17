@@ -1,4 +1,22 @@
 {
+  "postEmployeeDetails": [
+    {
+      "id": 3,
+      "firstName": "boy",
+      "lastName": "phairot",
+      "email": "boy@mail.com",
+      "mobile": "0132546957485",
+      "salary": "225255"
+    },
+    {
+      "id": 4,
+      "firstName": "boyy",
+      "lastName": "phairot",
+      "email": "boy@mail.com",
+      "mobile": "0132546957485",
+      "salary": "2252514"
+    }
+  ],
   "productList": [
     {
       "productName": "Dorae",

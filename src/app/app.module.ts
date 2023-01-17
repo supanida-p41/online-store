@@ -24,7 +24,8 @@ import {MatSortModule} from '@angular/material/sort';
 import {NgConfirmModule} from 'ng-confirm-box';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component'; 
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    NgConfirmModule
+    NgConfirmModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
