@@ -1,1 +1,36 @@
-<p>signup works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign Up</h1>
+                    <h6>Register Yourself!</h6>
+                </div>
+                <form>
+                    <form [formGroup]="signupForm">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1">Full Name</label>
+                            <input formControlName="fullname" stype="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1">Mobile Number</label>
+                            <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number">
+                        </div>  
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                      </form>
+                </form>
+                <a style="color:#fff; margin-top:10px;" routerLink="/login">Already register? Click to Login!!</a>
+            </div>
+        </div>
+    </div>
+</div>
+ 

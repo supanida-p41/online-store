@@ -1,6 +1,6 @@
 
 
-<mat-toolbar color="primary">
+<!--<mat-toolbar color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
   <mat-icon >menu</mat-icon>
   </button>
@@ -10,9 +10,9 @@
   <button type="button"  data-toggle="modal" data-target="#exampleModal" class="btn btn-success ml-3">Add Employee</button>
 </mat-toolbar>
 
-<ng-confirm></ng-confirm>
+<ng-confirm></ng-confirm>-->
 
-<div class="container">
+<!--<div class="container">
     <div style="margin-top: 10px;">
       <mat-form-field>
         <mat-label>Filter</mat-label>
@@ -85,6 +85,30 @@
     </div>
 </div>
 
-<app-employee-dashboard></app-employee-dashboard>
-<router-outlet></router-outlet>
+<app-employee-dashboard></app-employee-dashboard>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/home" routerLinkActive="active">Home</a>
+      <a class="navbar-brand" routerLink="/login" routerLinkActive="active">User</a>
+      <a class="navbar-brand" routerLink="/signup" routerLinkActive="active">Product</a>      
+      <a class="navbar-brand" routerLink="/dashboard" routerLinkActive="active">Contact Us</a>            
+    </div> 
+  </div>
+</nav>
+ 
+<div class="container">
+  <br>
+  <br>
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
+</div><!-- /.container -->
+
 
