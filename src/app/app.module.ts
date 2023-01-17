@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -22,6 +24,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {NgConfirmModule} from 'ng-confirm-box';
+
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
@@ -40,6 +43,8 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
@@ -55,8 +60,7 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    NgConfirmModule,
-    ReactiveFormsModule
+    NgConfirmModule
   ],
   providers: [],
   bootstrap: [AppComponent]
