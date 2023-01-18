@@ -96,6 +96,27 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "fullname": "momay",
+      "email": "may@gmail.com",
+      "password": "123456",
+      "mobile": 123648579,
+      "id": 2
+    },
+    {
+      "fullname": "momaylocv",
+      "email": "may@mail.com",
+      "password": "123456",
+      "mobile": 1241542163,
+      "id": 3
+    },
+    {
+      "fullname": "momay loclo",
+      "email": "boy@mmail.com",
+      "password": "12345678",
+      "mobile": 123645879,
+      "id": 4
     }
   ],
   "profile": {

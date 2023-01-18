@@ -7,7 +7,7 @@
                     <h6>Register Yourself!</h6>
                 </div>
                 <form>
-                    <form [formGroup]="signupForm">
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
                         <div class="mb-3">
                             <label for="exampleInputPassword1">Full Name</label>
                             <input formControlName="fullname" type="text" class="form-control" id="examplefullname" placeholder="Full Name">
