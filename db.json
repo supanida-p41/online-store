@@ -7,6 +7,14 @@
       "email": "momay@mail.com",
       "mobile": "02136547891",
       "salary": "25316"
+    },
+    {
+      "id": 6,
+      "firstName": "boy",
+      "lastName": "phairot",
+      "email": "phairot",
+      "mobile": "02136524978",
+      "salary": "123645"
     }
   ],
   "productList": [
