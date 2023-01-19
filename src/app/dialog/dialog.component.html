@@ -6,11 +6,11 @@
             <input formControlName="productName" matInput placeholder="Name">
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Product Category</mat-label>
+            <mat-label>Product type</mat-label>
             <mat-select formControlName="category" placeholder="Category">
-                <mat-option value="1">1</mat-option>
-                <mat-option value="2">2</mat-option>
-                <mat-option value="3">3</mat-option>
+                <mat-option value="ตุ๊กตา">ตุ๊กตา</mat-option>
+                <mat-option value="หุ่นยนต์">หุ่นยนต์</mat-option>
+                <mat-option value="รถบังคับ">รถบังคับ</mat-option>
             </mat-select>
         </mat-form-field>
         <mat-form-field appearance="fill">
@@ -20,7 +20,7 @@
             <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>    
-        <label for=""><h1>Product</h1></label>
+        <label for=""><h1>Condition</h1></label>
         <mat-radio-group formControlName="product" class="example-radio-group">
             <mat-radio-button class="example-radio-button"  *ngFor="let product of productList" [value]="product">
                 {{product}}
@@ -31,7 +31,7 @@
             <input formControlName="price" matInput type="number" placeholder="Price">
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Comment</mat-label>
+            <mat-label>Details</mat-label>
             <textarea formControlName="comment" matInput></textarea>
         </mat-form-field>
     </form>  

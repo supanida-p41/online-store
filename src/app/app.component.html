@@ -1,16 +1,18 @@
-<!--<mat-toolbar color="primary">
+<mat-toolbar color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
   <mat-icon >menu</mat-icon>
+   
   </button>
   <span>Online Store</span> 
   <span class="example-spacer"></span>
+  <a class="navbar-brand" routerLink="/dashboard" routerLinkActive="active">Contact Us</a> 
   <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
   <button type="button"  data-toggle="modal" data-target="#exampleModal" class="btn btn-success ml-3">Add Employee</button>
 </mat-toolbar>
 
-<ng-confirm></ng-confirm>-->
+<ng-confirm></ng-confirm>
 
-<!--<div class="container">
+<div class="container">
     <div style="margin-top: 10px;">
       <mat-form-field>
         <mat-label>Filter</mat-label>
@@ -28,7 +30,7 @@
       
           
           <ng-container matColumnDef="category">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Product type </th>
             <td mat-cell *matCellDef="let row"> {{row.category}} </td>
           </ng-container>
       
@@ -40,7 +42,7 @@
       
           
           <ng-container matColumnDef="product">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Product </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Condition </th>
             <td mat-cell *matCellDef="let row"> {{row.product}} </td>
           </ng-container>
 
@@ -52,7 +54,7 @@
 
           
           <ng-container matColumnDef="comment">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Comment </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
             <td mat-cell *matCellDef="let row"> {{row.comment}} </td>
           </ng-container>
 
@@ -83,9 +85,10 @@
     </div>
 </div>
 
-<app-employee-dashboard></app-employee-dashboard>-->
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<app-employee-dashboard></app-employee-dashboard>
+
+<!--<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -104,6 +107,6 @@
  
 <div class="container">
   <router-outlet></router-outlet>
-</div><!-- /.container -->
+</div> /.container -->
 
 

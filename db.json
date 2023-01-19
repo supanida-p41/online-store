@@ -1,14 +1,6 @@
 {
   "postEmployeeDetails": [
     {
-      "id": 3,
-      "firstName": "boy",
-      "lastName": "phairot",
-      "email": "boy@mail.com",
-      "mobile": "0132546957485",
-      "salary": "225255"
-    },
-    {
       "id": 5,
       "firstName": "momay",
       "lastName": "spnd",
@@ -89,6 +81,15 @@
       "comment": "123",
       "date": "2022-12-31T17:00:00.000Z",
       "id": 5
+    },
+    {
+      "productName": "jangjam",
+      "category": "ตุ๊กตา",
+      "product": "Brand New",
+      "price": 5000,
+      "comment": "kids",
+      "date": "2023-01-18T17:00:00.000Z",
+      "id": 6
     }
   ],
   "signupUsers": [

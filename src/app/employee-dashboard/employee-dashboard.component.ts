@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 import { EmploryeeModel } from './employee-dashboard.model';
-
+import { NgConfirmService } from 'ng-confirm-box';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-employee-dashboard',
   templateUrl: './employee-dashboard.component.html',
@@ -16,7 +17,7 @@ export class EmployeeDashboardComponent implements OnInit {
   showAdd !: boolean;
   showUpdate !: boolean;
   constructor(private formbuilder: FormBuilder,
-    private api : ApiService) { }
+    private api : ApiService,private confirmService: NgConfirmService,private router : Router) { }
 
   ngOnInit(): void{
     this.formValue = this.formbuilder.group({
@@ -59,13 +60,26 @@ export class EmployeeDashboardComponent implements OnInit {
       this.employeeData = res;
     })
   }
+  
   deleteEmployee(row : any){
+    this.confirmService.showConfirm("Are you sure?",()=>{ 
     this.api.deleteEmployee(row.id)
-    .subscribe(res=>{
-      alert("Delete Success")
+    .subscribe({
+      next:(res)=>{
+      //alert("Delete Success")
       this.getAllEmployee();
+      },
+      error:()=>{
+        alert("Error while deleting the product!")
+      }
     })
+  },
+  ()=>{
+     alert("Selected No")
   }
+  )
+
+ }
   onEdit(row: any){
     this.showAdd = false;
     this.showUpdate = false;
